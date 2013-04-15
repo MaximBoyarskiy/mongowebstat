@@ -39,4 +39,4 @@ It is made available under the [Simplified BSD License](http://en.wikipedia.org/
 
 And [remember](https://github.com/MaximBoyarskiy/mongowebstat/blob/master/src/static/like-a-boss.jpg)
 
-See src/roadmap.txt
+See roadmap.txt
