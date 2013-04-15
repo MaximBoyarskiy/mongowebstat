@@ -3,16 +3,40 @@ mongowebstat
 
 - Monitor your mongo in more convenient way.
 - Simple json based config.
-- Graphs in future!
+- Table based now and graphs in the future!
 - Mongo 2.4.X compatibility. Older version in plans.
 
-Install golang: http://golang.org/doc/install
-Install dependency: go get "labix.org/v2/mgo"
-Compile your mongowebstat:
-    go build main.go
-Or just run it:
-    go run main.go
+Build from sources
+------------------
 
-It is made available under the [Simplified BSD License](http://en.wikipedia.org/wiki/BSD_licenses#2-clause_license_.28.22Simplified_BSD_License.22_or_.22FreeBSD_License.22.29).
+_Install golang:_ http://golang.org/doc/install
+
+_Install dependency:_ <code>go get "labix.org/v2/mgo"</code>
+
+_Compile your mongowebstat:_ <code>go build main.go</code>
+
+_Or just run it:_ <code>go run main.go</code>
+
+Or use the compiled binary:
+-----------------------
+
+- copy your platform binary from bin folder
+- put it in near _static, templates_ folders
+- run it <code>./main-linux-386</code> on 8080 port or run it <code>./main-linux-386 -http=:8090</code> on 8090 or any other port.
+
+**Go to http://127.0.0.1:8080 and monitor your mongodb!**
+
+Check out mongowebstat.json: 
+----------------------------
+
+- put connection string to **"host"** field
+- set **"http"** to true for http connection or false for direct connection
+- put some short node name to **"name"** field
+- use as many host records as you want!
+
+
+It is made available under the [Simplified BSD License](http://en.wikipedia.org/wiki/BSD_licenses#2-clause_license_.28.22Simplified_BSD_License.22_or_.22FreeBSD_License.22.29)
+
+And [remember](https://github.com/MaximBoyarskiy/mongowebstat/blob/master/src/static/like-a-boss.jpg)
 
 See src/roadmap.txt

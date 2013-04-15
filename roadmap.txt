@@ -1,0 +1,14 @@
+TODO:
+
+Make it graphs.
+
+Fix closed channel issue
+
+Make it old mongo compatible (add MongoRawStat to each node and correct it depends on mongo version).
+
+Finish missed mongostat features:
+-Implement Time (http vs direct)
+-Implement MongoStat Locks! 2.4 as well as 2.0 and MiIdx %
+-Implement Repl
+
+Implement config reload. Improve it: make config name unique, show errors on the browser side and so on.

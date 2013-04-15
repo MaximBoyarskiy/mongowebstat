@@ -9,9 +9,9 @@ func init() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 }
 
-func Start() {
+func ServerStart(httpPtr *string) {
 
-	http.Handle("/static/", http.StripPrefix("/static", http.FileServer(http.Dir("./mongowebstat/static/"))))
+	http.Handle("/static/", http.StripPrefix("/static", http.FileServer(http.Dir("./static/"))))
 	http.HandleFunc("/", index)
 	http.HandleFunc("/config", config)
 	http.HandleFunc("/stats", getStats)
@@ -19,7 +19,7 @@ func Start() {
 
 	l.Print("Server is started.")
 	go puller()
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	if err := http.ListenAndServe(*httpPtr, nil); err != nil {
 		l.Fatal("Server error: ", err.Error())
 	}
 }

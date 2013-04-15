@@ -1,13 +1,13 @@
 [
-{
-"name": "direct",
-"host": "localhost",
-"http": false}
-,
-{
-"name":"viaHttp",
-"host": "http://localhost:28017",
-"http": true}
-
-
+    {
+        "name": "direct",
+        "host": "localhost",
+        "http": false
+    }
+    ,
+    {
+        "name":"viaHttp",
+        "host": "http://localhost:28017",
+        "http": true
+    }
 ]

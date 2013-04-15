@@ -9,7 +9,7 @@ var tmpl []byte
 
 func init() {
 	var err error
-	tmpl, err = ioutil.ReadFile("./mongowebstat/templates/base.html")
+	tmpl, err = ioutil.ReadFile("./templates/base.html")
 	if err != nil {
 		panic(err)
 	}
