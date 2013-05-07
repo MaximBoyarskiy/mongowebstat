@@ -1,11 +1,11 @@
 mongowebstat
 ============
 
-- Monitor your mongo in more convenient way.
+- Monitor your mongodb in more convenient way.
 - Monitor as many mongodb hosts as you want!
 - Simple json based config.
-- Table based now and graphs in the future!
-- Mongo 2.4.X compatibility. Older version in plans.
+- Table based now and graphs in the nearest future!
+- Mongo 2.4.X compatibility. Older version are in plans.
 
 Build from sources
 ------------------
