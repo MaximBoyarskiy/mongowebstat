@@ -1,3 +1,6 @@
+It is obsolete, unfortunatelly
+==============================
+
 mongowebstat
 ============
 
