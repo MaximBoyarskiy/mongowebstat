@@ -1,5 +1,5 @@
-It is obsolete, unfortunatelly
-==============================
+It is obsolete, unfortunatelly :(
+=================================
 
 mongowebstat
 ============
